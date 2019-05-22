@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+
+    <title>RunRoute</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- SCRIPT FOR TURF.JS -->
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    
+    <!-- GOOGLE MAP SCRIPTS -->
+    <script src='js/materialize.min.js'></script>
+ 
+
+
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+    
+    
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script> --> 
+</head>
+
+<div class="input-wrapper-1">
+    <div class="row">
+        <div class="input-field col s6">
+            <form id="myform">
+                <i class="material-icons prefix">directions_run</i>
+                <input class="left validate" id="field" name="field" placeholder="Desired Distance to Run in KM">
+                <textfield></textfield>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="input-wrapper-3">
+        <p>Distance in KM that you would have to run:</p>
+</div>
+
+<div class="button">
+    <button style="display: none;" onclick="redirect()" id="customButton" target="_blank">Directions</button>
+</div>
+
+<div class="input-wrapper-2">
+    <div class="counter" data-count="150">0</div> 
+</div>
+
+<div class="wrapper clearfix">
+    <div class="app-panel"></div>
+</div>
+
+<div class="map-panel"> 
+    <div id="map"></div>
+</div>
+
+
+<!-- GOOGLE MAP API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDihtGB2yvEZybh_nwMGyew5tj8fWRLafM&callback=initMap" type="text/javascript"></script>
+    
+    <script src='map.js'></script> 
+    <!-- <script src='js/inputfield.js'></script>   -->
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "studenthack-runroute",
+  "version": "1.0.0",
+  "description": "hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heidonomm/StudentHack-RunRoute.git"
+  },
+  "keywords": [
+    "hackathon"
+  ],
+  "author": "eesti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heidonomm/StudentHack-RunRoute/issues"
+  },
+  "homepage": "https://github.com/heidonomm/StudentHack-RunRoute#readme",
+  "dependencies": {
+    "@turf/circle": "^6.0.1",
+    "@turf/destination": "^6.0.1",
+    "express": "^4.16.4",
+    "jquery-validation": "^1.19.0"
+  }
+}
